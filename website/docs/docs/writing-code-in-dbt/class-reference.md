@@ -9,7 +9,7 @@ These classes are often useful when building advanced dbt models and macros.
 
 ## Relation
 
-The `Relation` object is used to interpolate schema and table names into SQL code with appropriate quoting. This object should _always_ be used instead of interpolating values with `{{ schema }}.{{ table }}` directly. Quoting of the Relation object can be configured in the [Configuring Quoting](configuring-quoting) section of the documentation.
+The `Relation` object is used to interpolate schema and table names into SQL code with appropriate quoting. This object should _always_ be used instead of interpolating values with `{{ schema }}.{{ table }}` directly. Quoting of the Relation object can be configured in the [Configuring Quoting](reference/project-configs/configuring-quoting.md) section of the documentation.
 
 ### Creating Relations
 
@@ -75,8 +75,8 @@ class Column(object):
       char_size: If dtype is a variable width character type, the size of the column, or else None
       numeric_size: If dtype is a fixed precision numeric type, the size of the column, or else None
    """
-    
-    
+
+
 # Example Usage:
 col = Column('name', 'varchar', 255)
 col.is_string() # True
