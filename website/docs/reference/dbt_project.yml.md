@@ -17,11 +17,11 @@ The following is a list of all available configurations in the `dbt_project.yml`
 <File name='dbt_project.yml'>
 
 ```yml
-name: string
+**[name](project-configs/name.md)**: string
 
-version: string
+**[version](project-configs/version.md)**: version
 
-profile: profilename
+[profile](project-configs/profile.md): profilename
 
 source-paths: [directorypath]
 [data-paths](project-configs/data-paths.md): [directorypath]
@@ -62,6 +62,9 @@ snapshots:
 </File>
 
 Relevant links:
+* **[name](project-configs/name.md)**
+* **[version](project-configs/version.md)**
+* [profile](project-configs/profile.md)
 * [data-paths](project-configs/data-paths.md)
 * [query-comment](project-configs/query-comment.md)
 * [require-dbt-version](project-configs/require-dbt-version.md)
